@@ -9,7 +9,7 @@
     <fragment
         android:id="@+id/confirmedFragment"
         android:name="com.taetae98.coronawidget.fragment.ConfirmedFragment"
-        android:label="@string/confirmed_people"
+        android:label="@string/confirmed"
         tools:layout="@layout/fragment_confirmed" />
     <fragment
         android:id="@+id/phaseFragment"
