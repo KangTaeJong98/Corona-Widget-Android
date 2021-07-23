@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Corona Widget</string>
-    <string name="confirmed_people">Confirmed People</string>
+    <string name="confirmed">Confirmed</string>
     <string name="phase">Phase</string>
 </resources>

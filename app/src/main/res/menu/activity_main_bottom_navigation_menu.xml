@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/confirmedFragment"
-        android:title="@string/confirmed_people"
+        android:title="@string/confirmed"
         android:icon="@drawable/ic_coronavirus" />
 
     <item

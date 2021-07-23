@@ -6,7 +6,9 @@ import androidx.navigation.ui.setupWithNavController
 import com.taetae98.coronawidget.R
 import com.taetae98.coronawidget.databinding.ActivityMainBinding
 import com.taetae98.coronawidget.databinding.BindingActivity
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : BindingActivity<ActivityMainBinding>(R.layout.activity_main) {
     override val appBarConfiguration by lazy {
         AppBarConfiguration(
