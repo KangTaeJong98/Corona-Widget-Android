@@ -1,14 +1,27 @@
 package com.taetae98.coronawidget.activity
 
-import androidx.navigation.ui.AppBarConfiguration
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.taetae98.coronawidget.R
-import com.taetae98.coronawidget.databinding.ActivitySplashBinding
-import com.taetae98.coronawidget.databinding.BindingActivity
+import com.taetae98.coronawidget.manager.InternetManager
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
-class SplashActivity : BindingActivity<ActivitySplashBinding>(R.layout.activity_splash) {
-    override val appBarConfiguration by lazy {
-        AppBarConfiguration(
-            setOf(R.id.splashFragment)
-        )
+@AndroidEntryPoint
+class SplashActivity : AppCompatActivity() {
+    @Inject
+    lateinit var internetManager: InternetManager
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        if (internetManager.isConnected()) {
+            startActivity(Intent(this, MainActivity::class.java))
+        } else {
+            Toast.makeText(this, R.string.connect_internet, Toast.LENGTH_SHORT).show()
+        }
+
+        finish()
     }
 }
