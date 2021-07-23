@@ -13,6 +13,11 @@
         android:icon="@drawable/ic_distance"/>
 
     <item
+        android:id="@+id/guidelineFragment"
+        android:title="@string/guideline"
+        android:icon="@drawable/ic_guideline" />
+
+    <item
         android:id="@+id/analysisFragment"
         android:title="@string/analysis"
         android:icon="@drawable/ic_analytics" />
