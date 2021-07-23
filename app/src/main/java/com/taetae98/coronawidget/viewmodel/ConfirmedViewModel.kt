@@ -20,7 +20,7 @@ class ConfirmedViewModel @Inject constructor(
             val timetable = document.select("div.timetable")
             val map = document.select("div.regional_patient_status_A")
             val chart = document.select("div.c_chart.c_chart_rps_B")
-            val script = document.body().getElementsByTag("script")
+            val script = document.select("script")
 
             withContext(Dispatchers.Main) {
                 html.value = createHTML("${document.head()}$timetable$map$chart$script")

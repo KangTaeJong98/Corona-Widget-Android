@@ -19,7 +19,7 @@ class PhaseViewModel @Inject constructor(
             val document = Jsoup.connect("http://ncov.mohw.go.kr/regSocdisBoardView.do?brdId=6&brdGubun=68&ncvContSeq=495").get()
             val timetable = document.select("div.timetable")
             val map = document.select("div.regional_step_status")
-            val script = document.body().getElementsByTag("script")
+            val script = document.select("script")
 
             withContext(Dispatchers.Main) {
                 html.value = createHTML("${document.head()}$timetable$map$script")
