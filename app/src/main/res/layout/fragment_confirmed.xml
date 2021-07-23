@@ -9,7 +9,7 @@
             type="com.taetae98.coronawidget.viewmodel.ConfirmedViewModel" />
     </data>
 
-    <WebView
+    <com.taetae98.coronawidget.view.JavaScriptWebView
         android:id="@+id/web_view"
         app:html="@{viewModel.html}"
         android:layout_width="match_parent"
