@@ -13,19 +13,14 @@ class MainActivity : BindingActivity<ActivityMainBinding>(R.layout.activity_main
     override val appBarConfiguration by lazy {
         AppBarConfiguration(
             setOf(
-                R.id.confirmedFragment, R.id.phaseFragment, R.id.analysisFragment
+                R.id.confirmedFragment, R.id.phaseFragment, R.id.analysisFragment, R.id.guidelineFragment
             )
         )
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        onCreateSupportActionBar()
         onCreateBottomNavigationView()
-    }
-
-    private fun onCreateSupportActionBar() {
-        setSupportActionBar(binding.toolbar)
     }
 
     private fun onCreateBottomNavigationView() {

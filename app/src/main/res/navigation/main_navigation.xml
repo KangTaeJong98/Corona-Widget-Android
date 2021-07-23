@@ -21,4 +21,9 @@
         android:name="com.taetae98.coronawidget.fragment.AnalysisFragment"
         android:label="@string/analysis"
         tools:layout="@layout/fragment_analysis"/>
+    <fragment
+        android:id="@+id/guidelineFragment"
+        android:name="com.taetae98.coronawidget.fragment.GuidelineFragment"
+        android:label="@string/guideline"
+        tools:layout="@layout/fragment_guideline"/>
 </navigation>
