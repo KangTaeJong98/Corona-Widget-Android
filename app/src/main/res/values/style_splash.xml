@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.CoronaWidget.Splash" parent="Theme.CoronaWidget">
+        <item name="android:windowBackground">@drawable/img_splash</item>
+    </style>
+</resources>

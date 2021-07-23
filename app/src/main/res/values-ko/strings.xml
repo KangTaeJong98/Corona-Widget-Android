@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">코로나 위젯</string>
+    <string name="confirmed">확진자</string>
+    <string name="phase">단계</string>
+    <string name="analysis">분석</string>
+    <string name="guideline">방역수칙</string>
+    <string name="connect_internet">인터넷을 연결하세요.</string>
+</resources>
