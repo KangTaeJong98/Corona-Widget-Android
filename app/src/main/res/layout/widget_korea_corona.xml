@@ -1,77 +1,100 @@
 <LinearLayout
+    style="@style/Theme.CoronaWidget.Widget.Background"
     android:id="@+id/layout"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/local"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/local"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/phase"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content">
-
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="@string/total_confirmed"
-            android:textAlignment="center"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
+            style="@style/Theme.CoronaWidget.Widget.Text.Title"
+            android:id="@+id/confirmed_text_view"
             android:text="@string/confirmed"
-            android:textAlignment="center"
-            android:textSize="14sp" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/Theme.CoronaWidget.Widget.Text.Main"
+            android:id="@+id/total_confirmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="100000"/>
+        <TextView
+            style="@style/Theme.CoronaWidget.Widget.Text.Sub"
+            android:id="@+id/confirmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="+1000"/>
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content">
-
         <TextView
-            android:id="@+id/total_confirmed"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
+            style="@style/Theme.CoronaWidget.Widget.Text.Title"
+            android:id="@+id/dead_text_view"
+            android:text="@string/dead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <TextView
-            android:id="@+id/confirmed"
-            android:layout_width="0dp"
+            style="@style/Theme.CoronaWidget.Widget.Text.Main"
+            android:id="@+id/total_dead"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            tools:text="100000"/>
+        <TextView
+            style="@style/Theme.CoronaWidget.Widget.Text.Sub"
+            android:id="@+id/dead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="+1000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/first_vaccine_text_view"
+            style="@style/Theme.CoronaWidget.Widget.Text.Title"
+            android:text="@string/first_vaccine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/Theme.CoronaWidget.Widget.Text.Main"
+            android:id="@+id/first_vaccine"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="32.9%"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            style="@style/Theme.CoronaWidget.Widget.Text.Title"
+            android:id="@+id/second_vaccine_text_view"
+            android:text="@string/second_vaccine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/Theme.CoronaWidget.Widget.Text.Main"
+            android:id="@+id/second_vaccine"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="13.4%"/>
     </LinearLayout>
 </LinearLayout>
