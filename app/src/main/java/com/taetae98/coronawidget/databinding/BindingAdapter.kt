@@ -1,7 +1,9 @@
 package com.taetae98.coronawidget.databinding
 
+import android.view.View
 import android.webkit.WebView
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 
@@ -21,5 +23,11 @@ object BindingAdapter {
         }
 
         Glide.with(view).load(url).into(view)
+    }
+
+    @JvmStatic
+    @BindingAdapter("backgroundColor")
+    fun setBackgroundColor(view: View, color: Int) {
+        view.setBackgroundColor(color)
     }
 }
