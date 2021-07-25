@@ -5,4 +5,15 @@
     <string name="analysis">Analysis</string>
     <string name="guideline">Guideline</string>
     <string name="connect_internet">Connect Internet</string>
+    <string name="local">Local</string>
+    <string name="total_confirmed">Total Confirmed</string>
+    <string name="plus_confirmed">Plus Confirmed</string>
+    <string name="korea_corona_widget">Korea Corona Widget</string>
+    <string name="n_phase">%d Phase</string>
+    <string name="n_person">%d</string>
+    <string name="n_confirmed">+%d</string>
+    <string name="finish">Finish</string>
+    <string name="text_color">Text Color</string>
+    <string name="background_color">Background Color</string>
+    <string name="ok">OK</string>
 </resources>
