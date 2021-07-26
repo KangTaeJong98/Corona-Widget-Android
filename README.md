@@ -1,11 +1,8 @@
 # CoronaWidget
-<img src="./readme/graphic_image_kr.png" alt="Gachon-QR Image" width="100%">
-<img src="./readme/graphic_image_en.png" alt="Gachon-QR Image" width="100%">
-
 # 코로나 현황 분석 및 코로나 위젯
 # Corona Status Analysis and Corona Widget
+https://play.google.com/store/apps/details?id=com.taetae98.coronawidget
 
-# https://play.google.com/store/apps/details?id=com.taetae98.coronawidget
 
 ## 😊 Introduction
 * #### ConfirmedFragment
