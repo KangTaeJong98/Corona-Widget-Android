@@ -1,100 +1,121 @@
-<LinearLayout
+<GridLayout
     style="@style/Theme.CoronaWidget.Widget.Background"
     android:id="@+id/layout"
-    android:orientation="horizontal"
+    android:columnCount="4"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:baselineAligned="false"
+    android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_weight="1"
+    <TextView
+        android:id="@+id/confirmed_text_view"
+        style="@style/Theme.CoronaWidget.Widget.Text.Title"
         android:layout_width="0dp"
-        android:layout_height="wrap_content">
-        <TextView
-            style="@style/Theme.CoronaWidget.Widget.Text.Title"
-            android:id="@+id/confirmed_text_view"
-            android:text="@string/confirmed"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            style="@style/Theme.CoronaWidget.Widget.Text.Main"
-            android:id="@+id/total_confirmed"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="100000"/>
-        <TextView
-            style="@style/Theme.CoronaWidget.Widget.Text.Sub"
-            android:id="@+id/confirmed"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="+1000"/>
-    </LinearLayout>
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="@string/confirmed" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_weight="1"
+    <TextView
+        android:id="@+id/dead_text_view"
+        style="@style/Theme.CoronaWidget.Widget.Text.Title"
         android:layout_width="0dp"
-        android:layout_height="wrap_content">
-        <TextView
-            style="@style/Theme.CoronaWidget.Widget.Text.Title"
-            android:id="@+id/dead_text_view"
-            android:text="@string/dead"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            style="@style/Theme.CoronaWidget.Widget.Text.Main"
-            android:id="@+id/total_dead"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="100000"/>
-        <TextView
-            style="@style/Theme.CoronaWidget.Widget.Text.Sub"
-            android:id="@+id/dead"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="+1000"/>
-    </LinearLayout>
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="@string/dead" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_weight="1"
+    <TextView
+        android:id="@+id/first_vaccine_text_view"
+        style="@style/Theme.CoronaWidget.Widget.Text.Title"
         android:layout_width="0dp"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/first_vaccine_text_view"
-            style="@style/Theme.CoronaWidget.Widget.Text.Title"
-            android:text="@string/first_vaccine"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            style="@style/Theme.CoronaWidget.Widget.Text.Main"
-            android:id="@+id/first_vaccine"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:text="32.9%"/>
-    </LinearLayout>
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="@string/first_vaccine" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_weight="1"
+    <TextView
+        android:id="@+id/second_vaccine_text_view"
+        style="@style/Theme.CoronaWidget.Widget.Text.Title"
         android:layout_width="0dp"
-        android:layout_height="match_parent">
-        <TextView
-            style="@style/Theme.CoronaWidget.Widget.Text.Title"
-            android:id="@+id/second_vaccine_text_view"
-            android:text="@string/second_vaccine"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            style="@style/Theme.CoronaWidget.Widget.Text.Main"
-            android:id="@+id/second_vaccine"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:text="13.4%"/>
-    </LinearLayout>
-</LinearLayout>
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="@string/second_vaccine" />
+
+    <TextView
+        android:id="@+id/total_confirmed"
+        style="@style/Theme.CoronaWidget.Widget.Text.Main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="bottom|center_horizontal"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="5dp"
+        tools:text="100000" />
+
+    <TextView
+        android:id="@+id/total_dead"
+        style="@style/Theme.CoronaWidget.Widget.Text.Main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="bottom|center_horizontal"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="5dp"
+        tools:text="100000" />
+
+    <TextView
+        android:id="@+id/first_vaccine"
+        style="@style/Theme.CoronaWidget.Widget.Text.Main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowSpan="2"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        tools:text="32.9%" />
+
+    <TextView
+        android:id="@+id/second_vaccine"
+        style="@style/Theme.CoronaWidget.Widget.Text.Main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowSpan="2"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        tools:text="13.4%" />
+
+    <TextView
+        android:id="@+id/confirmed"
+        style="@style/Theme.CoronaWidget.Widget.Text.Sub"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center_horizontal|top"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="10dp"
+        tools:text="+1000" />
+
+    <TextView
+        android:id="@+id/dead"
+        style="@style/Theme.CoronaWidget.Widget.Text.Sub"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center_horizontal|top"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="10dp"
+        tools:text="+1000" />
+</GridLayout>
