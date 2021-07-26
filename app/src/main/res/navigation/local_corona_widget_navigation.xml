@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/local_corona_widget_navigation.xml"
+    app:startDestination="@id/localCoronaWidgetFragment">
+
+    <fragment
+        android:id="@+id/localCoronaWidgetFragment"
+        android:name="com.taetae98.coronawidget.fragment.LocalCoronaWidgetFragment"
+        android:label="@string/local_corona_widget"
+        tools:layout="@layout/fragment_local_corona_widget"/>
+</navigation>

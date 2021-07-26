@@ -3,6 +3,7 @@ package com.taetae98.coronawidget.di
 import android.content.Context
 import com.taetae98.coronawidget.room.AppDatabase
 import com.taetae98.coronawidget.room.KoreaCoronaWidgetInformationDao
+import com.taetae98.coronawidget.room.LocalCoronaWidgetInformationDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -23,5 +24,11 @@ class AppDatabaseModule {
     @Provides
     fun providesKoreaCoronaWidgetInformationDao(appDatabase: AppDatabase): KoreaCoronaWidgetInformationDao {
         return appDatabase.koreaCoronaWidgetInformation()
+    }
+
+    @Singleton
+    @Provides
+    fun providesLocalCoronaWidgetInformationDao(appDatabase: AppDatabase): LocalCoronaWidgetInformationDao {
+        return appDatabase.localCoronaWidgetInformation()
     }
 }

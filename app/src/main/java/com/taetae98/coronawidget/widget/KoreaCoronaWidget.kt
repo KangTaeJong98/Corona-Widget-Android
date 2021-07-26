@@ -94,7 +94,7 @@ class KoreaCoronaWidget : AppWidgetProvider() {
     override fun onDeleted(context: Context, appWidgetIds: IntArray) {
         super.onDeleted(context, appWidgetIds)
         CoroutineScope(Dispatchers.IO).launch {
-            widgetRepository.deleteById(appWidgetIds)
+            widgetRepository.deleteByIdKoreaCoronaWidgetInformation(appWidgetIds)
         }
     }
 

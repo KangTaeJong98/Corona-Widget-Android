@@ -6,8 +6,9 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.taetae98.coronawidget.DATABASE_NAME
 import com.taetae98.coronawidget.dto.KoreaCoronaWidgetInformation
+import com.taetae98.coronawidget.dto.LocalCoronaWidgetInformation
 
-@Database(entities = [KoreaCoronaWidgetInformation::class], version = 1)
+@Database(entities = [KoreaCoronaWidgetInformation::class, LocalCoronaWidgetInformation::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
     companion object {
         @Volatile
@@ -25,4 +26,5 @@ abstract class AppDatabase : RoomDatabase() {
     }
 
     abstract fun koreaCoronaWidgetInformation(): KoreaCoronaWidgetInformationDao
+    abstract fun localCoronaWidgetInformation(): LocalCoronaWidgetInformationDao
 }

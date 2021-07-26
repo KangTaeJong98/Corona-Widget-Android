@@ -7,16 +7,17 @@
     <string name="guideline">방역수칙</string>
     <string name="connect_internet">인터넷을 연결하세요.</string>
     <string name="local">지역</string>
-    <string name="n_person">%s명</string>
-    <string name="plus_n_person">+%s명</string>
-    <string name="n_phase">%d단계</string>
+    <string name="n_person">%s</string>
+    <string name="plus_n_person">+%s</string>
+    <string name="n_phase">%s단계</string>
     <string name="korea_corona_widget">전국 코로나 현황</string>
-    <string name="total_confirmed">총\\n확진자</string>
+    <string name="total_confirmed">총\n확진자</string>
     <string name="finish">완료</string>
     <string name="text_color">텍스트 컬러</string>
     <string name="background_color">백그라운드 컬러</string>
     <string name="ok">확인</string>
     <string name="dead">사망자</string>
-    <string name="first_vaccine">백신\\n1차 접종</string>
-    <string name="second_vaccine">백신\\n2차 접종</string>
+    <string name="first_vaccine">백신\n1차 접종</string>
+    <string name="second_vaccine">백신\n2차 접종</string>
+    <string name="local_corona_widget">지역 코로나 위젯</string>
 </resources>

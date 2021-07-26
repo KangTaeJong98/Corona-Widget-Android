@@ -6,9 +6,9 @@
     <string name="guideline">Guideline</string>
     <string name="connect_internet">Connect Internet</string>
     <string name="local">Local</string>
-    <string name="total_confirmed">Total\\nConfirmed</string>
+    <string name="total_confirmed">Total\nConfirmed</string>
     <string name="korea_corona_widget">Korea Corona Widget</string>
-    <string name="n_phase">%d Phase</string>
+    <string name="n_phase">%s Phase</string>
     <string name="n_person">%s</string>
     <string name="plus_n_person">+%s</string>
     <string name="finish">Finish</string>
@@ -18,4 +18,5 @@
     <string name="dead">Dead</string>
     <string name="first_vaccine">First\nVaccine</string>
     <string name="second_vaccine">Second\nVaccine</string>
+    <string name="local_corona_widget">Local Corona Widget</string>
 </resources>
